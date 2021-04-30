@@ -1,12 +1,12 @@
-import { mount } from '@cypress/vue'
-import HelloWorld from './HelloWorld.vue'
+import { mount } from "@cypress/vue";
+import HelloWorld from "./HelloWorld.vue";
 
-it('renders a message', () => {
+it("renders a message", () => {
   mount(HelloWorld, {
     propsData: {
-      msg: 'Hello Cypress!'
-    }
-  })
+      msg: "Hello Cypress!",
+    },
+  });
 
-  cy.get('h1').contains('Hello Cypress!')
-})
+  cy.get("h1").contains("Hello Cypress!");
+});
